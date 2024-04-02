@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changing Rectangle</title>
+    <style>
+        .rectangle {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="rectangle"></div>
+
+    <!-- <input type="radio" name="color" id="blueRadio" value="blue"> Blue
+    <input type="radio" name="color" id="yellowRadio" value="yellow"> Yellow
+    <input type="radio" name="color" id="greenRadio" value="green"> Green
+    <input type="radio" name="color" id="clearRadio" value="white"> Clear
+
+    <script>
+        $(document).ready(function () {
+            const rectangle = $("#rectangle");
+
+            $("input[type='radio']").change(function () {
+                const selectedColor = $("input[name='color']:checked").val();
+                rectangle.css("background-color", selectedColor);
+            });
+        });
+    </script> -->
+
+    <input type="radio" name="color" id="blueRadio" value="blue"> <label for="blueRadio">Blue</label>
+    <input type="radio" name="color" id="yellowRadio" value="yellow"> <label for="yellowRadio">Yellow</label>
+    <input type="radio" name="color" id="greenRadio" value="green"> <label for="greenRadio">Green</label>
+    <input type="radio" name="color" id="clearRadio" value="white"> <label for="clearRadio">Clear</label>
+
+    <script>
+        $(document).ready(function () {
+            const rectangle = $(".rectangle"); // . is used for selecting class 
+
+            $("input[type='radio']").change(function () {
+                const selectedColor = $("input[name='color']:checked").val();
+                rectangle.css("background-color", selectedColor);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

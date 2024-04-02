@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Color Changing Rectangle</title>
+    <style>
+        #rectangle {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="rectangle"></div>
+    <button id="blueBtn">Blue</button>
+    <button id="yellowBtn">Yellow</button>
+    <button id="greenBtn">Green</button>
+    <button id="clearBtn">Clear</button>
+
+    <!-- <script>
+        $(document).ready(function () {
+            const rectangle = $("#rectangle");
+
+            $("#blueBtn").click(function () {
+                rectangle.css("background-color", "blue");
+            });
+
+            $("#yellowBtn").click(function () {
+                rectangle.css("background-color", "yellow");
+            });
+
+            $("#greenBtn").click(function () {
+                rectangle.css("background-color", "green");
+            });
+
+            $("#clearBtn").click(function () {
+                rectangle.css("background-color", "white");
+            });
+        });
+    </script> -->
+
+    <script>
+        $(document).ready(function () {
+            const rectangle = $("#rectangle");
+
+            $("#blueBtn").click(function () {
+                rectangle.css("background-color", "#0000FF");
+            });
+
+            $("#yellowBtn").click(function () {
+                rectangle.css("background-color", "#FFFF00");
+            });
+
+            $("#greenBtn").click(function () {
+                rectangle.css("background-color", "#008000");
+            });
+
+            $("#clearBtn").click(function () {
+                rectangle.css("background-color", "#FFFFFF");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
